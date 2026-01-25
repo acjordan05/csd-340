@@ -1,0 +1,92 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+/* Main container styling */
+#container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* H1 title centered */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Side-by-side divs */
+.side-by-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+/* Left and right div widths */
+.left, .right {
+    width: 45%;
+}
+
+/* Combined heading + list styling for borders */
+.left h3, .left ol {
+    margin: 0;
+}
+
+.left {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.left h3 {
+    font-weight: 700; /* Bold heading */
+    margin-bottom: 10px;
+}
+
+.left ol {
+    list-style-position: inside;
+    font-weight: 500; /* Medium weight for list */
+    padding-left: 10px; 
+}
+
+.right h3, .right ul {
+    margin: 0;
+}
+
+.right {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.right h3 {
+    font-weight: 700; /* Bold heading */
+    margin-bottom: 10px;
+}
+
+.right ul {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    font-weight: 500; /* Medium weight for list */
+    padding-left: 10px;
+}
+
+/* Bottom div styling (Return link) */
+.bottom {
+    width: 100%;
+    margin-top: 60px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Links styling */
+a {
+    color: #0066cc; /* match your color scheme */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Link hover */
+a:hover {
+    text-decoration: underline;
+}
