@@ -1,0 +1,53 @@
+/* center the main title */
+h1 {
+    text-align: center;
+    color: rgba(0, 102, 153, 1);
+}
+
+/* grid container for 3 books */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+    border: 2px solid rgba(0,0,0,0.7); /* big border around all 3 books */
+}
+
+/* add vertical separators between books */
+.gallery-item {
+    border-right: 1px solid rgba(0,0,0,0.5);
+    padding: 10px;
+    text-align: center;
+}
+
+/* remove right border from last item */
+.gallery-item:last-child {
+    border-right: none;
+}
+
+/* center book titles */
+h3 {
+    text-align: center;
+    color: rgba(153, 51, 51, 1);
+}
+
+/* center figure and captions */
+figure {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* style captions */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(51, 102, 51, 1);
+}
+
+/* scale images */
+img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
