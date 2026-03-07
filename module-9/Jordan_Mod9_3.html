@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSD 340 Web Development with HTML and CSS</title>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+h3 {
+    color: #2C3E50;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+span.blank {
+    display: inline-block;
+    width: 100px;
+    border-bottom: 2px solid #9B59B6;
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    margin: 8px 5px 8px 0;
+    padding: 8px 12px;
+    background-color: #9B59B6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #7D3C98;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: #2C3E50;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Assignment 9.3: JavaScript – Part 1</h1>
+</header>
+
+<div class="container">
+
+<h3>A Day in the Park</h3>
+
+<p>
+This <span id="blank1" class="blank">_______</span>, I went to the <span id="blank2" class="blank">_______</span> with my sister and her boyfriend. We saw four tiny <span id="blank3" class="blank">_______</span> waddling behind their mother.
+</p>
+
+<p>
+It was amusing to watch them, and we felt <span id="blank4" class="blank">_______</span> as they struggled to keep up. For a moment, we felt a little sad for the baby ducks, but our hearts lifted when they finally rejoined their mom.
+</p>
+
+<p>
+Spending the morning there was peaceful, and it reminded us to enjoy small moments with family and nature.
+</p>
+
+<h3>Fill in the blanks:</h3>
+
+<button id="btn1" onclick="fillBlank('blank1','morning','btn1')">morning</button>
+<button id="btn2" onclick="fillBlank('blank2','park','btn2')">park</button>
+<button id="btn3" onclick="fillBlank('blank3','ducklings','btn3')">ducklings</button>
+<button id="btn4" onclick="fillBlank('blank4','happy','btn4')">happy</button>
+
+</div>
+
+<footer>
+<p>Created by Aysa Jordan &copy; 2026</p>
+</footer>
+
+<script>
+function fillBlank(blankId, value, buttonId) {
+    document.getElementById(blankId).textContent = value;
+    document.getElementById(buttonId).style.display = "none";
+}
+</script>
+
+</body>
+</html>
