@@ -1,0 +1,27 @@
+#movies{
+border-collapse:collapse;
+width:100%;
+margin-bottom:30px;
+}
+
+#movies th{
+padding-top:12px;
+padding-bottom:12px;
+text-align:left;
+}
+
+#movies td{
+border:1px solid #ddd;
+padding:8px;
+}
+
+footer{
+position:fixed;
+left:0;
+bottom:0;
+width:100%;
+}
+
+#container{
+margin:2% 5% 100px 5%;
+}
