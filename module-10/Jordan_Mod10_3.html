@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSD 340 Web Development with HTML and CSS</title>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    color: #2C3E50;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+img.clickable {
+    width: 180px;
+    height: auto;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+img.clickable:hover {
+    transform: scale(1.05);
+}
+
+#displayText {
+    margin-top: 25px;
+    font-size: 1.2em;
+    color: #2C3E50;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: #2C3E50;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Assignment 10.3: JavaScript – Part 2</h1>
+</header>
+
+<div class="container">
+    <h3>A Day in the Park Story</h3>
+    <p>My sister, her boyfriend, and I went to the park to enjoy the sunny afternoon.</p>
+    <p>We spotted four baby ducks waddling behind their mother. It was funny to watch them try to keep up!</p>
+    <p>We felt happy seeing them finally reunite with their mom, and it reminded us to enjoy simple moments with family.</p>
+
+    <h3>Click an image to reveal a message:</h3>
+    <img src="images/park_family.jpg" class="clickable" alt="Sister, her boyfriend, and me at the park"
+         onclick="showText('We started our walk in the park feeling excited and relaxed!')">
+    <img src="images/baby_ducks.jpg" class="clickable" alt="Four baby ducks waddling"
+         onclick="showText('Look at these tiny ducks trying to follow their mom!')">
+    <img src="images/mom_duck.jpg" class="clickable" alt="Mom duck ahead"
+         onclick="showText('The mom duck was leading the way confidently.')">
+    <img src="images/ducks_reunited.jpg" class="clickable" alt="Baby ducks reunited with mom"
+         onclick="showText('Happiness filled the air as the baby ducks finally rejoined their mom!')">
+
+    <p id="displayText">Click an image above to see a message about the story!</p>
+</div>
+
+<footer>
+<p>Created by Aysa Jordan &copy; 2026</p>
+</footer>
+
+<script>
+function showText(message) {
+    document.getElementById('displayText').textContent = message;
+}
+</script>
+
+</body>
+</html>
